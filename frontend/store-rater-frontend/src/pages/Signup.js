@@ -17,7 +17,7 @@ const Signup = () => {
     setLoading(true);
     setError('');
 
-    if (name.length < 20 || name.length > 60) {
+    if (name.length < 2 || name.length > 60) {
       setError('Name must be between 20 and 60 characters.');
       setLoading(false);
       return;
